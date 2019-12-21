@@ -13,14 +13,14 @@ class Form extends Component{
     }
 
     handleChange = event => {
-        const { name, job } = event.target
+        const { name , value } = event.target
         this.setState({
-            [name] : job
+            [name] : value
         })
     }
 
     render(){
-        const { name, job } = this.state
+        const { name , job } = this.state
 
         return(
             <form>
